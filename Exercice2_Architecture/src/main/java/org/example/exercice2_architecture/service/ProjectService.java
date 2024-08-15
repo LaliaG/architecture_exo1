@@ -7,6 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProjectService {
 
+    public void notifyMembers(String message, NotificationAction action) {
+        // Exécute l'action de notification avec le message
+        action.execute(message);
+    }
+
     public void updateTaskStatus(String taskId, String newStatus, NotifyAction notificationAction) {
         System.out.println("Task " + taskId + " status updated to " + newStatus);
 

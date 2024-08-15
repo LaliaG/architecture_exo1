@@ -1,12 +1,6 @@
-package org.example.tp_architecture.infrastructure.springdata.portimpl;
+package org.example.infrastructure_spring_data.portimpl;
 
-import org.example.tp_architecture.infrastructure.springdata.repository.ReservationRepository;
-import org.example.tp_architecture.shared.dto.ReservationDTO;
-import org.example.tp_architecture.shared.port.ReservationPort;
-
-import java.util.List;
-
-public class ReservationPortImpl implements ReservationPort {
+public class ReservationPortImpl implements ReservationPort{
 
     private final ReservationRepository reservationRepository;
 
