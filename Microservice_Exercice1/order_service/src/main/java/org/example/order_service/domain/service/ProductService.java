@@ -18,4 +18,8 @@ public class ProductService {
     public ProductDTO getProductById(int id) {
         return productPort.findById(id);
     }
+
+    public ProductDTO saveProduct(ProductDTO productDTO) {
+        return productDTO;
+    }
 }
